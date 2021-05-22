@@ -11,6 +11,7 @@
    - Yes, this is a great case to use a unit test since it would be a very specific function that is called and tested. For example you can easily try to put 81 characters as a test within the message and know that it should throw the error.
 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
+   - I expect to not show us the browser that it is interacting with. Instead it would do so without any visual cues other then those in the command line. It having "headless" set to false is what allows us to watch the Puppeteer tests interacting with the site.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
 
