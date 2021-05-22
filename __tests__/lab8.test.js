@@ -191,13 +191,17 @@ describe('Basic user flow for SPA ', () => {
   });
 
   // create your own test 19
-  it('Test19', async() => {
+  it('Test19: Clicking the back button once should take the user back to Entry2', async() => {
+    await page.goBack();
 
+    expect(page.url()).toMatch(/#entry2/);
   });
 
   // create your own test 20
-  it('Test20', async() => {
+  it('Test20: Clicking the forward button one should take the user back to Entry10', async() => {
+    await page.goForward();
 
+    expect(page.url()).toMatch(/#entry10/);
   });
   
 });
