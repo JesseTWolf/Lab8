@@ -22,3 +22,7 @@ beforeEach(async () => {
     await page.waitForTimeout(500);  
   });
 ```
+
+## Final Test Results
+
+![test-results](test-results.png)
